@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meu Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--CSS da página-->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+
+    <!--Font Awesone para usar os ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Ícone que ficará na aba do navegador-->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favhand.png" type="image/x-png">
+</head>
+
+<body>
+
+    <!--Cabeçalho da página-->
+    <header>
+        <!--Criar o menu de navegação-->
+        <a href="/" class="logo">Sergio Nahirny</a>
+        <div id="menu" class="fa fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidade</a></li>
+                <li><a href="#formacoes">Formações</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Documento da página-->
+    <main>
+        <!--painel inicial-->
+        <section id="home" class="home">
+            <div id="particles-js">Particulas Aqui</div>
+            <div class="conteudo">
+                <h2> Prazer, Sergio Nahirny<br> Sou estudante de Análise e 
+                    desenvolvimento de sistemas e tenho conhecimento em 
+                    <span class="escrever-texto"></span></h2>
+                
+
+                <a href="#sobre" class="btn">
+                    <span>Sobre mim
+                    </span>
+                    <i class="fas fa-arrow-circle-down"></i></a>
+                <!--ícones das redes sociais-->
+                <div class="sociais">
+                    <ul class="social-icones">
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/in/sergionahirny/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="github" href="https://github.com/spn1994" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com/srgpersonal/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Imagem da pessoa-->
+            <div class="imagem">
+                <img class="tilt imagem-padrão" src="img/img1.png">
+                <img class="tilt imagem-hover" src="img/img2.png">
+              </div>
+        </section>
+        <!--Fim Sessão Principal-->
+
+        <!--Sessão sobre-->
+        <section class="sobre" id="sobre">
+            <h2 class="cabecalho">
+                <i class="fas fa-user-alt"></i>Sobre
+            </h2>
+
+            <div class="linha">
+                <div class="imagem">
+                    <img class="tilt" src="img/foto.png">
+                </div>
+                <div class="conteudo">
+                    <h3>Eu sou Sergio Nahirny</h3>
+                    <span class="tag">Desenvolvedor Full Stack (Javascript)</span>
+
+                    <p>Sou estudante de Análise e desenvolvimento de Sistemas pela PUCPR e 
+                    possuo formação em Educação Física pela mesma instituição. Decidi dar um passo ousado ao ingressar no mundo da tecnologia, 
+                    acreditando que minhas paixões e habilidades na Ed. Física podem se traduzir de maneira valiosa na área tecnológica. 
+                    Como educador físico, minha missão sempre foi promover o bem-estar e a saúde por meio da atividade física, e durante essa jornada, 
+                    desenvolvi habilidades de comunicação, empatia e dedicação. </p>
+
+                    <div class="caixa-conteudo">
+                        <div class="caixa">
+                            <p>
+                                <span>
+                                    Telefone:
+                                </span>
+                                <a href="https://wa.me/41998851612">+41 99885-1612</a>
+                            </p>
+                        </div>
+                        <div class="caixa">
+                            <p>
+                                <span>
+                                    e-mail:
+                                </span>
+                                <a href="mailto:spn1994@gmail.com" class="uppercase">spn1994@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--Botão Baixar Currículo-->
+                    <div class="resumebtn">
+                        <a href="/img/Curriculo.pdf" target="_blank" class="btn">
+                            <span>Currículo</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--fim sessão sobre-->
+
+        <!--Sessão Habilidades-->
+        <section class="skills" id="habilidades">
+            <h2 class="cabecalho"> Conhecimentos & <span>Habilidades</span></h2>
+
+            <div class="conteudo">
+                <!--Uma Linha de Habilidades-->
+                <div class="linha" id="caixaskills">
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/css.png">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/javascript.png">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/node.jpg">
+                            <span>NodeJS</span>
+                        </div>
+                    </div>
+
+                    <!--Teste-->
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/java.png">
+                            <span>Java</span>
+                        </div>
+                    </div>                   
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/react.png">
+                            <span>React JS</span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/sql.png">
+                            <span>React JS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bar">
+                        <div class="info">
+                            <img src="img/git.png">
+                            <span>Git</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Sessão de Estudos -->
+        <section id="formacoes" class="formacoes">
+            <h2 class="cabecalho"> <i class="fas fa-graduation-cap"></i>
+                Minhas <span>Formações</span>
+            </h2>
+
+            <p class="textoformacao">A Educação é a porta de
+                entrada para o sucesso.
+            </p>
+
+            <div class="caixa-conteudo">
+                <div class="caixa">
+                    <div class="imagem">
+                        <img src="img/plano-de-fundo-de-programacao-com-pessoa-trabalhando-com-codigos-no-computador_23-2150010125.avif">
+                    </div>
+                    <div class="conteudo">
+                        <h3>Análise e desenvolvimento de sistemas</h3>
+                        <p>PUC-PR</p>
+                        <h4>2021-2024</h4>
+                        <p>
+                            O curso visa capacitar estudantes no desenvolvimento prático e aprimoramento de sistemas inovadores. 
+                            Proporciona formação abrangente e prática, preparando os alunos para criar, 
+                            implementar e melhorar soluções tecnológicas inovadoras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="caixa">
+                    <div class="imagem">
+                        <img src="img/mulher-de-tiro-completo-fazendo-esporte-com-estatisticas_23-2150040495.jpg">
+                    </div>
+                    <div class="conteudo">
+                        <h3>Bacharelado em Educação Física</h3>
+                        <p>PUC-PR</p>
+                        <h4>2014-2018</h4>
+                        <p>O curso proporcionou uma formação abrangente, 
+                            capacitando-me para atuar na promoção da saúde e 
+                            bem-estar através da atividade física.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim sessão formações-->
+
+        <section class="trabalhos" id="trabalhos">
+            <h2 class="cabecalho"><i class="fas fa-laptop-code"></i> Projetos <span>Feitos</span></h2>
+            <div class="caixa-conteudo">
+
+                <div class="caixa tilt">
+                    <img src="img/notes.jpeg" alt="" />
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h3>Notes</h3>
+                        </div>
+                        <div class="desc">
+                            <p>É uma aplicação envolvendo REACT, NODE e SQL, na qual é possível registrar usuário e suas notas</p>
+                            <div class="btns">
+                                <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> Ver</a>
+                                <a href="#" class="btn" target="_blank">Código <i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa tilt">
+                    <img draggable="false" src="./assets/images/projects/projeto1.jpg" alt="" />
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h3>Portfolio Pessoa</h3>
+                        </div>
+                        <div class="desc">
+                            <p>Já fiz vários portifólios</p>
+                            <div class="btns">
+                                <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> Ver</a>
+                                <a href="#" class="btn" target="_blank">Código <i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa tilt">
+                    <img draggable="false" src="img/calculadora.jpeg" alt="" />
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h3>Calculadora IMC</h3>
+                        </div>
+                        <div class="desc">
+                            <p>Aplicação visando prática da linguagem Javascript, que retornam os valores do IMC</p>
+                            <div class="btns">
+                                <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> Ver</a>
+                                <a href="#" class="btn" target="_blank">Código <i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa tilt">
+                    <img draggable="false" src="./assets/images/projects/projeto1.jpg" alt="" />
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h3>Portfolio Pessoa</h3>
+                        </div>
+                        <div class="desc">
+                            <p>Já fiz vários portifólios</p>
+                            <div class="btns">
+                                <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> Ver</a>
+                                <a href="#" class="btn" target="_blank">Código <i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa tilt">
+                    <img draggable="false" src="./assets/images/projects/projeto1.jpg" alt="" />
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h3>Portfolio Pessoa</h3>
+                        </div>
+                        <div class="desc">
+                            <p>Já fiz vários portifólios</p>
+                            <div class="btns">
+                                <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> Ver</a>
+                                <a href="#" class="btn" target="_blank">Código <i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa tilt">
+                    <img draggable="false" src="./assets/images/projects/projeto1.jpg" alt="" />
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h3>Portfolio Pessoa</h3>
+                        </div>
+                        <div class="desc">
+                            <p>Já fiz vários portifólios</p>
+                            <div class="btns">
+                                <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> Ver</a>
+                                <a href="#" class="btn" target="_blank">Código <i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="vertudo" id="vertudo">
+                <a href="javascript:void(0)" class="btn" id="mostrarMaisBtn" onclick="toggleProjetos()">
+                    <span id="btnText">Mostrar Mais</span> 
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+        </section>
+        <!-- work project section ends -->
+
+        <!--Sessão de Experiências-->
+        <section id="experiencias" class="experiencias">
+            <h2 class="cabecalho"><i class="fas fa-briefcase"></i> Experiências </h2>
+            
+            <div class="timeline">
+                <div class="container direito">
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h2>Freelancer</h2>
+                        </div>
+                        <div class="desc">
+                            <h3>Desenvolvimento Full Stack</h3>
+                            <p>2021 - presente</p>
+                            <p>Alguns projetos feitos com auxilio de instituições,
+                                 mostrando as principais skills que o mercado 
+                                 de trabalho necessita </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container esquerdo">
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h2>CWB RUNNER Assessoria esportiva</h2>
+                        </div>
+                        <div class="desc">
+                            <h3> Treinador de corrida (atletismo) e treino funcional</h3>
+                            <p>2018 - presente</p>
+                            <p>Prescrição de treino de corrida e fortalecimento especifico para corrida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container direito">
+                    <div class="conteudo">
+                        <div class="tag">
+                            <h2>Mup Fitness</h2>
+                        </div>
+                        <div class="desc">
+                            <h3>Instrutor de musculação e aulas coletivas</h3>
+                            <p>2014 - 2021</p>
+                            <p>Prescrição de exercícios físicos de forma e aulas coletivas</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="maisbtn">
+                    <a href="javascript:void(0)" class="btn"><span>Histórico profissional</span>
+                        <!-- <i class="fas fa-arrow-right"></i> -->
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Fim sessão Experiências-->
+
+        <!--Sessão dos Contatos-->
+        <section id="contatos" class="contatos">
+            <h2 class="cabecalho"><i class="fas fa-headset"></i> Entre em <span>Contato</span></h2>
+            <div class="container">
+                <div class="conteudo">
+                    <div class="caixa-imagem">
+                        <img src="img/contact.png" alt="Imagem de pessoa entrando em Contato">
+                    </div>
+                    <form id="contato-form" action="https://formsubmit.co/spn1994@gmail.com" method="POST" >
+                        
+                        <div class="form-grupo">
+                            
+                            <div class="campo">
+                                <input type="text" name="nome" placeholder="Nome" required>
+                                <i class='fas fa-user'></i>
+                            </div>
+                            <div class="campo">
+                                <input type="text" name="email" placeholder="E-mail" required>
+                                <i class='fas fa-envelope'></i>
+                            </div>
+                            <div class="campo">
+                                <input type="text" name="fone" placeholder="Telefone">
+                                <i class='fas fa-phone-alt'></i>
+                            </div>
+                            <div class="mensagem">
+                                <textarea placeholder="Mensagem" name="mensagem" required></textarea>
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                        </div>
+                        <div class="botao-area">
+                            <button type="submit">
+                                Enviar <i class="fa fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <input type="hidden" name="_autoresponse" value="Muito Obrigado pelo contato, em breve responderei.">                    
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--Fim sessão Contato-->
+    </main>
+    <!--Fim corpo com da página-->
+
+    <!--Rodapé da página-->
+    <footer>
+        <section class="rodape">
+            <div class="box-container">
+                <div class="caixa">
+                    <h3>Portifólio Sergio Nahirny</h3>
+                    <p>Obrigado por Visitar meu Portifólio.
+                        Visite-me nas redes sociais. <br /> <br />
+                </div>
+
+                <div class="caixa">
+                    <h3>Links Rápidos</h3>
+                    <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+                    <a href="#sobre"><i class="fas fa-chevron-circle-right"></i> Sobre</a>
+                    <a href="#habilidades"><i class="fas fa-chevron-circle-right"></i> Conhecimentos</a>
+                    <a href="#formacoes"><i class="fas fa-chevron-circle-right"></i> Educação</a>
+                    <a href="#trabalhos"><i class="fas fa-chevron-circle-right"></i> Trabalhos</a>
+                    <a href="#experiencias"><i class="fas fa-chevron-circle-right"></i> Experiências</a>
+                </div>
+
+                <div class="caixa">
+                    <h3>Informações para Contato</h3>
+                    <p> <i class="fas fa-phone"></i>+41 99885-1612</p>
+                    <p> <i class="fas fa-envelope"></i>spn1994@gmail.com</p>
+                    <div class="share">
+
+                        <a href="https://www.linkedin.com/in/sergionahirny/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                        <a href="https://github.com/spn1994" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                        <a href="https://accounts.google.com/" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--Fim rodapé-->
+
+    <!-- Botao de voltar ao topo-->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+
+    <!--Links das bibliotecas em uso em js-->
+    <!-- aqui é teste -->
+    <script>
+        function toggleProjetos() {
+            let projetos = document.querySelectorAll('.caixa.tilt');
+          
+            if (projetos.length === 0) {
+              console.error("Nenhum elemento encontrado com as classes 'caixa' e 'tilt'");
+              return;
+            }
+          
+            // Altere o texto e o ícone do botão:
+            let mostrarMaisBtn = document.getElementById('mostrarMaisBtn');
+            let btnText = document.getElementById('btnText');
+          
+            // Inverte o estado de exibição dos projetos
+            let isMostrandoMais = projetos[3].style.display === 'none' || projetos[3].style.display === '';
+            for (let i = 3; i < projetos.length; i++) {
+              projetos[i].style.display = isMostrandoMais ? 'block' : 'none';
+            }
+          
+            // Altere o texto e o ícone do botão apenas uma vez, no início da função
+            if (btnText) {
+              btnText.innerText = 'Mostrar Menos';
+              mostrarMaisBtn.innerHTML = isMostrandoMais ? '<i class="fas fa-minus"></i>' : '<i class="fas fa-plus"></i>';
+            }
+          
+            // Altere o texto e o ícone do botão quando o evento de clique for disparado
+            mostrarMaisBtn.addEventListener('click', () => {
+              // Altere o texto e o ícone do botão para o oposto do que está atualmente
+              if (btnText) {
+                btnText.innerText = btnText.innerText === 'Mostrar Menos' ? 'Mostrar +' : 'Mostrar Menos';
+              }
+              mostrarMaisBtn.innerHTML = mostrarMaisBtn.innerHTML === '<i class="fas fa-minus"></i>' ? '<i class="fas fa-plus"></i>' : '<i class="fas fa-minus"></i>';
+            });
+          }
+                  
+        
+    </script>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Typed.js é uma biblioteca que digita. Insira qualquer 
+    string e observe-a digitar na velocidade que você definiu, 
+    retroceda o que foi digitado e comece uma nova frase para quantas strings você definiu.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- particle.js links -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- vanilla. Cria o efeito 3D nas imagens -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+        integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- animação do scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js/main.js"></script>
+    
+
+</body>
+
+</html>
