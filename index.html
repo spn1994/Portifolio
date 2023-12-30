@@ -522,14 +522,14 @@
       }
     </script>
     <script>function esconderBotao() {
-        var maisbtn = document.getElementById('maisbtn');
+        let maisbtn = document.getElementById('maisbtn');
     
         // Verifica se o elemento foi encontrado
         if (maisbtn) {
-          var larguraTela = window.innerWidth;
+          let larguraTela = window.innerWidth;
     
           // Defina a largura máxima para a qual o botão será exibido (por exemplo, 600 pixels)
-          var larguraMaxima = 600;
+          let larguraMaxima = 600;
     
           if (larguraTela <= larguraMaxima) {
             maisbtn.style.display = 'none';
@@ -537,13 +537,16 @@
             maisbtn.style.display = 'block';
           }
         }
-      }
+      }      
     
       // Espera até que o DOM esteja totalmente carregado
       document.addEventListener('DOMContentLoaded', esconderBotao);
     
       // Verifique o tamanho da tela sempre que a janela for redimensionada
       window.addEventListener('resize', esconderBotao);</script>
+
+
+    
     <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
