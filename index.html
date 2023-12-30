@@ -41,8 +41,7 @@
     <!--Documento da página-->
     <main>
         <!--painel inicial-->
-        <section id="home" class="home">
-            <div id="particles-js">Particulas Aqui</div>
+        <section id="home" class="home">            
             <div class="conteudo">
                 <h2> Prazer, Sergio Nahirny<br> Sou estudante de Análise e 
                     desenvolvimento de sistemas e tenho conhecimento em 
@@ -100,7 +99,7 @@
                     <p>Sou estudante de Análise e desenvolvimento de Sistemas pela PUCPR e 
                     possuo formação em Educação Física pela mesma instituição. Decidi dar um passo ousado ao ingressar no mundo da tecnologia, 
                     acreditando que minhas paixões e habilidades na Ed. Física podem se traduzir de maneira valiosa na área tecnológica. 
-                    Como educador físico, minha missão sempre foi promover o bem-estar e a saúde por meio da atividade física, e durante essa jornada, 
+                    Como profissional de Educação Física, minha missão sempre foi promover o bem-estar e a saúde por meio da atividade física, e durante essa jornada, 
                     desenvolvi habilidades de comunicação, empatia e dedicação. </p>
 
                     <div class="caixa-conteudo">
@@ -136,7 +135,7 @@
 
         <!--Sessão Habilidades-->
         <section class="skills" id="habilidades">
-            <h2 class="cabecalho"> Conhecimentos & <span>Habilidades</span></h2>
+            <h2 class="cabecalho"> Conhecimentos & Habilidades</h2>
 
             <div class="conteudo">
                 <!--Uma Linha de Habilidades-->
@@ -199,7 +198,7 @@
         <!--Sessão de Estudos -->
         <section id="formacoes" class="formacoes">
             <h2 class="cabecalho"> <i class="fas fa-graduation-cap"></i>
-                Minhas <span>Formações</span>
+                Minhas Formações
             </h2>
 
             <p class="textoformacao">A Educação é a porta de
@@ -209,7 +208,7 @@
             <div class="caixa-conteudo">
                 <div class="caixa">
                     <div class="imagem">
-                        <img src="/assets/plano-de-fundo-de-programacao-com-pessoa-trabalhando-com-codigos-no-computador_23-2150010125.avif">
+                        <img src="./assets/plano-de-fundo-de-programacao-com-pessoa-trabalhando-com-codigos-no-computador_23-2150010125.avif">
                     </div>
                     <div class="conteudo">
                         <h3>Análise e desenvolvimento de sistemas</h3>
@@ -225,7 +224,7 @@
 
                 <div class="caixa">
                     <div class="imagem">
-                        <img src="/assets/mulher-de-tiro-completo-fazendo-esporte-com-estatisticas_23-2150040495.jpg">
+                        <img src="./assets/mulher-de-tiro-completo-fazendo-esporte-com-estatisticas_23-2150040495.jpg">
                     </div>
                     <div class="conteudo">
                         <h3>Bacharelado em Educação Física</h3>
@@ -241,7 +240,7 @@
         <!--Fim sessão formações-->
 
         <section class="trabalhos" id="trabalhos">
-            <h2 class="cabecalho"><i class="fas fa-laptop-code"></i> Projetos <span>Feitos</span></h2>
+            <h2 class="cabecalho"><i class="fas fa-laptop-code"></i> Projetos Feitos</h2>
             <div class="caixa-conteudo">
 
                 <div class="caixa tilt">
@@ -292,7 +291,7 @@
                     </div>
                 </div>
                 <div class="caixa tilt">
-                    <img draggable="false" src="./assets/images/projects/projeto1.jpg" alt="" />
+                    <img draggable="false" src="./assets/euu.jpeg" alt="" />
                     <div class="conteudo">
                         <div class="tag">
                             <h3>Portfolio Pessoa</h3>
@@ -307,7 +306,7 @@
                     </div>
                 </div>
                 <div class="caixa tilt">
-                    <img draggable="false" src="./assets/images/projects/projeto1.jpg" alt="" />
+                    <img draggable="false" src="./" alt="" />
                     <div class="conteudo">
                         <div class="tag">
                             <h3>Portfolio Pessoa</h3>
@@ -322,7 +321,7 @@
                     </div>
                 </div>
                 <div class="caixa tilt">
-                    <img draggable="false" src="./assets/images/projects/projeto1.jpg" alt="" />
+                    <img draggable="false" src="./" alt="" />
                     <div class="conteudo">
                         <div class="tag">
                             <h3>Portfolio Pessoa</h3>
@@ -399,17 +398,16 @@
 
 
                 <div class="maisbtn">
-                    <a href="javascript:void(0)" class="btn"><span>Histórico profissional</span>
-                        <!-- <i class="fas fa-arrow-right"></i> -->
-                    </a>
-                </div>
+                    <a href="javascript:void(0)" class="btn" id="maisbtn"><span>Histórico profissional</span>
+                      </a>
+                  </div>
             </div>
         </section>
         <!--Fim sessão Experiências-->
 
         <!--Sessão dos Contatos-->
         <section id="contatos" class="contatos">
-            <h2 class="cabecalho"><i class="fas fa-headset"></i> Entre em <span>Contato</span></h2>
+            <h2 class="cabecalho"><i class="fas fa-headset"></i> Entre em Contato</h2>
             <div class="container">
                 <div class="conteudo">
                     <div class="caixa-imagem">
@@ -490,46 +488,6 @@
     <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
 
 
-    <!--Links das bibliotecas em uso em js-->
-    <!-- aqui é teste -->
-    <script>
-        function toggleProjetos() {
-            let projetos = document.querySelectorAll('.caixa.tilt');
-          
-            if (projetos.length === 0) {
-              console.error("Nenhum elemento encontrado com as classes 'caixa' e 'tilt'");
-              return;
-            }
-          
-            // Altere o texto e o ícone do botão:
-            let mostrarMaisBtn = document.getElementById('mostrarMaisBtn');
-            let btnText = document.getElementById('btnText');
-          
-            // Inverte o estado de exibição dos projetos
-            let isMostrandoMais = projetos[3].style.display === 'none' || projetos[3].style.display === '';
-            for (let i = 3; i < projetos.length; i++) {
-              projetos[i].style.display = isMostrandoMais ? 'block' : 'none';
-            }
-          
-            // Altere o texto e o ícone do botão apenas uma vez, no início da função
-            if (btnText) {
-              btnText.innerText = 'Mostrar Menos';
-              mostrarMaisBtn.innerHTML = isMostrandoMais ? '<i class="fas fa-minus"></i>' : '<i class="fas fa-plus"></i>';
-            }
-          
-            // Altere o texto e o ícone do botão quando o evento de clique for disparado
-            mostrarMaisBtn.addEventListener('click', () => {
-              // Altere o texto e o ícone do botão para o oposto do que está atualmente
-              if (btnText) {
-                btnText.innerText = btnText.innerText === 'Mostrar Menos' ? 'Mostrar +' : 'Mostrar Menos';
-              }
-              mostrarMaisBtn.innerHTML = mostrarMaisBtn.innerHTML === '<i class="fas fa-minus"></i>' ? '<i class="fas fa-plus"></i>' : '<i class="fas fa-minus"></i>';
-            });
-          }
-                  
-        
-    </script>
-
     <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -542,17 +500,14 @@
         integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- particle.js links -->
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
-
     <!-- vanilla. Cria o efeito 3D nas imagens -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
         integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- animação do scroll -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--  <script src="https://unpkg.com/scrollreveal"></script> -->
+   
 
     <script src="js/main.js"></script>
     

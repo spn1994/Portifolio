@@ -206,14 +206,6 @@ header .navbar ul li a:hover {
   display: block;
 }
 
-.home #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
 .home .conteudo {
   /*A propriedade flex do CSS, define como um ítem será posicionado para no 
   espaço disponível dentro de seu container.*/

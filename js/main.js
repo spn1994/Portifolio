@@ -90,3 +90,61 @@ let typed = new Typed(".escrever-texto", {
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 20,
 })
+
+function esconderBotao() {
+    var maisbtn = document.getElementById('maisbtn');
+
+    // Verifica se o elemento foi encontrado
+    if (maisbtn) {
+      var larguraTela = window.innerWidth;
+
+      // Defina a largura máxima para a qual o botão será exibido (por exemplo, 600 pixels)
+      var larguraMaxima = 600;
+
+      if (larguraTela <= larguraMaxima) {
+        maisbtn.style.display = 'none';
+      } else {
+        maisbtn.style.display = 'block';
+      }
+    }
+  }
+
+  // Espera até que o DOM esteja totalmente carregado
+  document.addEventListener('DOMContentLoaded', esconderBotao);
+
+  // Verifique o tamanho da tela sempre que a janela for redimensionada
+  window.addEventListener('resize', esconderBotao);
+
+  function toggleProjetos() {
+    let projetos = document.querySelectorAll('.caixa.tilt');
+  
+    if (projetos.length === 0) {
+      console.error("Nenhum elemento encontrado com as classes 'caixa' e 'tilt'");
+      return;
+    }
+  
+    // Altere o texto e o ícone do botão:
+    let mostrarMaisBtn = document.getElementById('mostrarMaisBtn');
+    let btnText = document.getElementById('btnText');
+  
+    // Inverte o estado de exibição dos projetos
+    let isMostrandoMais = projetos[3].style.display === 'none' || projetos[3].style.display === '';
+    for (let i = 3; i < projetos.length; i++) {
+      projetos[i].style.display = isMostrandoMais ? 'block' : 'none';
+    }
+  
+    // Altere o texto e o ícone do botão apenas uma vez, no início da função
+    if (btnText) {
+      btnText.innerText = 'Mostrar Menos';
+      mostrarMaisBtn.innerHTML = isMostrandoMais ? '<i class="fas fa-minus"></i>' : '<i class="fas fa-plus"></i>';
+    }
+  
+    // Altere o texto e o ícone do botão quando o evento de clique for disparado
+    mostrarMaisBtn.addEventListener('click', () => {
+      // Altere o texto e o ícone do botão para o oposto do que está atualmente
+      if (btnText) {
+        btnText.innerText = btnText.innerText === 'Mostrar Menos' ? 'Mostrar +' : 'Mostrar Menos';
+      }
+      mostrarMaisBtn.innerHTML = mostrarMaisBtn.innerHTML === '<i class="fas fa-minus"></i>' ? '<i class="fas fa-plus"></i>' : '<i class="fas fa-minus"></i>';
+    });
+  }
