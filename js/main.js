@@ -79,7 +79,7 @@ document.addEventListener('visibilitychange',
 // e o atraso para escrever
 
 let typed = new Typed(".escrever-texto", {
-    strings: ["JavaScript", "nodeJS", "React", "Java"],
+    strings: ["JavaScript", "TypeScript", "nodeJS", "React", "Java"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
